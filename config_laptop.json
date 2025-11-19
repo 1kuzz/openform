@@ -1,0 +1,1530 @@
+[
+  {
+    "id": "s_1",
+    "title": "Материалы",
+    "fields": [
+      {
+        "id": "f_63",
+        "name": "material",
+        "labels": {
+          "ru": "Укажите материалы корпуса для каждой части ноутбука: верхняя крышка (A), экранная панель (B), клавиатурная часть (C) и нижняя панель/аккумуляторный отсек (D). Используйте обозначения: P — пластик, A — алюминий, M — магний.",
+          "en": ""
+        },
+        "type": "select",
+        "options": "PPPP, APPP, MPPP, APPA, MPPM, APAA, MPMM",
+        "required": true,
+        "hint": "Выберите комбинацию букв P/A/M, соответствующую материалам каждой части (например, APPP)",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_65",
+        "name": "material_colour",
+        "labels": {
+          "ru": "Выберите планируемый цвет устройства",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Серебристый, Тёмно-серый, Чёрный, Белый, Розово-золотой, Голубой, Зелёный, Лавандовый, Золотой, Переливающийся",
+        "required": false,
+        "hint": "Укажите цвет корпуса, который будет у изделия.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_64",
+        "name": "material_oil",
+        "labels": {
+          "ru": "Поддержка олеофобного покрытия поверхностей",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если предусмотрено олеофобное покрытие для защиты от отпечатков.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      }
+    ]
+  },
+  {
+    "id": "s_2",
+    "title": "Размеры и вес",
+    "fields": [
+      {
+        "id": "f_66",
+        "name": "size_weight",
+        "labels": {
+          "ru": "Введите вес устройства в стандартной конфигурации",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите массу ноутбука в килограммах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_67",
+        "name": "size__heightwfeet",
+        "labels": {
+          "ru": "Введите высоту устройства с учётом резиновых ножек",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите высоту корпуса вместе с ножками, в миллиметрах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_68",
+        "name": "size__heightwofeet",
+        "labels": {
+          "ru": "Введите высоту устройства без резиновых ножек",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите высоту корпуса без ножек, в миллиметрах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_69",
+        "name": "size__width",
+        "labels": {
+          "ru": "Введите ширину устройства",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите ширину корпуса, в миллиметрах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_70",
+        "name": "size__length",
+        "labels": {
+          "ru": "Введите длину устройства",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите длину корпуса, в миллиметрах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      }
+    ]
+  },
+  {
+    "id": "s_3",
+    "title": "Дисплей",
+    "fields": [
+      {
+        "id": "f_71",
+        "name": "display_inch",
+        "labels": {
+          "ru": "Введите диагональ экрана ноутбука в дюймах",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите размер диагонали дисплея, например 15.6.",
+        "validation": {
+          "min": "10",
+          "max": "19",
+          "step": "0.1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_77",
+        "name": "display_resolution",
+        "labels": {
+          "ru": "Выберите разрешение экрана",
+          "en": ""
+        },
+        "type": "select",
+        "options": "1280×800, 1280×720, 1280×768, 1366×768, 1440×900, 1600×900, 1680×1050, 1920×1080, 1920×1200, 2560×1440, 2560×1600, 3840×2160, 3840×2400",
+        "required": true,
+        "hint": "Выберите разрешение матрицы из списка.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_76",
+        "name": "display_bright",
+        "labels": {
+          "ru": "Введите яркость экрана",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите максимальную яркость дисплея в канделах на квадратный метр (кд/м²).",
+        "validation": {
+          "min": "150",
+          "max": "2000",
+          "step": "50",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_75",
+        "name": "display_aspect",
+        "labels": {
+          "ru": "Выберите соотношение сторон экрана",
+          "en": ""
+        },
+        "type": "select",
+        "options": "16 x 9, 16 x 10, 4 x 3",
+        "required": true,
+        "hint": "Выберите соотношение сторон матрицы.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_74",
+        "name": "display_type",
+        "labels": {
+          "ru": "Выберите тип панели дисплея",
+          "en": ""
+        },
+        "type": "select",
+        "options": "TN, IPS, VA, OLED, miniLED",
+        "required": true,
+        "hint": "Укажите технологию матрицы, например IPS или OLED.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_73",
+        "name": "display_refresh",
+        "labels": {
+          "ru": "Введите частоту обновления экрана",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите частоту обновления дисплея в герцах (Гц).",
+        "validation": {
+          "min": "50",
+          "max": "240",
+          "step": "5",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_72",
+        "name": "display_response",
+        "labels": {
+          "ru": "Введите время отклика матрицы",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите время отклика дисплея в миллисекундах (мс).",
+        "validation": {
+          "min": "0",
+          "max": "30",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_78",
+        "name": "display_touch",
+        "labels": {
+          "ru": "Наличие сенсорного экрана",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если экран поддерживает сенсорное управление.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_79",
+        "name": "display_180lid",
+        "labels": {
+          "ru": "Возможность раскрывать ноутбук на 180 градусов",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": true,
+        "hint": "Отметьте, если крышку можно раскрыть полностью на 180°.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      }
+    ]
+  },
+  {
+    "id": "s_4",
+    "title": "Порты и подключение",
+    "fields": [
+      {
+        "id": "f_53",
+        "name": "usb_type_1",
+        "labels": {
+          "ru": "Выберите тип основного USB‑порта",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Type-A | USB 2.0 , Type-A | USB 3.2 Gen 1 , Type-A | USB 3.2 Gen 2 , Type-A | USB 3.2 Gen 2×2 , Type-A | USB4 , Type-C | USB 2.0 | PD | Alt Mode , Type-C | USB 2.0 | PD , Type-C | USB 2.0 | Alt Mode , Type-C | USB 2.0 , Type-C | USB 3.2 Gen 1 | PD | Alt Mode , Type-C | USB 3.2 Gen 1 | PD , Type-C | USB 3.2 Gen 1 | Alt Mode , Type-C | USB 3.2 Gen 1 , Type-C | USB 3.2 Gen 2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2 | PD , Type-C | USB 3.2 Gen 2 | Alt Mode , Type-C | USB 3.2 Gen 2 , Type-C | USB 3.2 Gen 2×2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2×2 | PD , Type-C | USB 3.2 Gen 2×2 | Alt Mode , Type-C | USB 3.2 Gen 2×2 , Type-C | USB4 | PD | Alt Mode | TB3 , Type-C | USB4 | PD | Alt Mode | TB4 , Type-C | USB4 | PD | Alt Mode , Type-C | USB4 | PD , Type-C | USB4 | Alt Mode | TB3 , Type-C | USB4 | Alt Mode | TB4 , Type-C | USB4 | Alt Mode , Type-C | USB4 | TB3 , Type-C | USB4 | TB4 , Type-C | USB4",
+        "required": true,
+        "hint": "Укажите тип и поколение основного USB‑порта.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_54",
+        "name": "usb_type_1_num",
+        "labels": {
+          "ru": "Введите количество таких портов",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите количество портов указанного выше типа.",
+        "validation": {
+          "min": "1",
+          "max": "10",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_55",
+        "name": "usb_type_2",
+        "labels": {
+          "ru": "Выберите тип второго USB‑порта (если он установлен)",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Нет, Type-A | USB 2.0 , Type-A | USB 3.2 Gen 1 , Type-A | USB 3.2 Gen 2 , Type-A | USB 3.2 Gen 2×2 , Type-A | USB4 , Type-C | USB 2.0 | PD | Alt Mode , Type-C | USB 2.0 | PD , Type-C | USB 2.0 | Alt Mode , Type-C | USB 2.0 , Type-C | USB 3.2 Gen 1 | PD | Alt Mode , Type-C | USB 3.2 Gen 1 | PD , Type-C | USB 3.2 Gen 1 | Alt Mode , Type-C | USB 3.2 Gen 1 , Type-C | USB 3.2 Gen 2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2 | PD , Type-C | USB 3.2 Gen 2 | Alt Mode , Type-C | USB 3.2 Gen 2 , Type-C | USB 3.2 Gen 2×2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2×2 | PD , Type-C | USB 3.2 Gen 2×2 | Alt Mode , Type-C | USB 3.2 Gen 2×2 , Type-C | USB4 | PD | Alt Mode | TB3 , Type-C | USB4 | PD | Alt Mode | TB4 , Type-C | USB4 | PD | Alt Mode , Type-C | USB4 | PD , Type-C | USB4 | Alt Mode | TB3 , Type-C | USB4 | Alt Mode | TB4 , Type-C | USB4 | Alt Mode , Type-C | USB4 | TB3 , Type-C | USB4 | TB4 , Type-C | USB4",
+        "required": false,
+        "hint": "Укажите тип второго USB‑порта.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_56",
+        "name": "usb_type_2_num",
+        "labels": {
+          "ru": "Введите количество портов второго типа (если есть)",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите количество портов указанного типа; если нет, введите 0.",
+        "validation": {
+          "min": "0",
+          "max": "10",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_57",
+        "name": "usb_type_3",
+        "labels": {
+          "ru": "Выберите тип третьего USB‑порта (если он установлен)",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Нет, Type-A | USB 2.0 , Type-A | USB 3.2 Gen 1 , Type-A | USB 3.2 Gen 2 , Type-A | USB 3.2 Gen 2×2 , Type-A | USB4 , Type-C | USB 2.0 | PD | Alt Mode , Type-C | USB 2.0 | PD , Type-C | USB 2.0 | Alt Mode , Type-C | USB 2.0 , Type-C | USB 3.2 Gen 1 | PD | Alt Mode , Type-C | USB 3.2 Gen 1 | PD , Type-C | USB 3.2 Gen 1 | Alt Mode , Type-C | USB 3.2 Gen 1 , Type-C | USB 3.2 Gen 2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2 | PD , Type-C | USB 3.2 Gen 2 | Alt Mode , Type-C | USB 3.2 Gen 2 , Type-C | USB 3.2 Gen 2×2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2×2 | PD , Type-C | USB 3.2 Gen 2×2 | Alt Mode , Type-C | USB 3.2 Gen 2×2 , Type-C | USB4 | PD | Alt Mode | TB3 , Type-C | USB4 | PD | Alt Mode | TB4 , Type-C | USB4 | PD | Alt Mode , Type-C | USB4 | PD , Type-C | USB4 | Alt Mode | TB3 , Type-C | USB4 | Alt Mode | TB4 , Type-C | USB4 | Alt Mode , Type-C | USB4 | TB3 , Type-C | USB4 | TB4 , Type-C | USB4",
+        "required": false,
+        "hint": "Укажите тип третьего USB‑порта.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_58",
+        "name": "usb_type_3_num",
+        "labels": {
+          "ru": "Введите количество портов третьего типа (если есть)",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите количество портов указанного типа.",
+        "validation": {
+          "min": "0",
+          "max": "10",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_59",
+        "name": "usb_type_4",
+        "labels": {
+          "ru": "Выберите тип четвёртого USB‑порта (если он установлен)",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Нет, Type-A | USB 2.0 , Type-A | USB 3.2 Gen 1 , Type-A | USB 3.2 Gen 2 , Type-A | USB 3.2 Gen 2×2 , Type-A | USB4 , Type-C | USB 2.0 | PD | Alt Mode , Type-C | USB 2.0 | PD , Type-C | USB 2.0 | Alt Mode , Type-C | USB 2.0 , Type-C | USB 3.2 Gen 1 | PD | Alt Mode , Type-C | USB 3.2 Gen 1 | PD , Type-C | USB 3.2 Gen 1 | Alt Mode , Type-C | USB 3.2 Gen 1 , Type-C | USB 3.2 Gen 2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2 | PD , Type-C | USB 3.2 Gen 2 | Alt Mode , Type-C | USB 3.2 Gen 2 , Type-C | USB 3.2 Gen 2×2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2×2 | PD , Type-C | USB 3.2 Gen 2×2 | Alt Mode , Type-C | USB 3.2 Gen 2×2 , Type-C | USB4 | PD | Alt Mode | TB3 , Type-C | USB4 | PD | Alt Mode | TB4 , Type-C | USB4 | PD | Alt Mode , Type-C | USB4 | PD , Type-C | USB4 | Alt Mode | TB3 , Type-C | USB4 | Alt Mode | TB4 , Type-C | USB4 | Alt Mode , Type-C | USB4 | TB3 , Type-C | USB4 | TB4 , Type-C | USB4",
+        "required": false,
+        "hint": "Укажите тип четвёртого USB‑порта.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_60",
+        "name": "usb_type_4_num",
+        "labels": {
+          "ru": "Введите количество портов четвёртого типа (если есть)",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите количество портов указанного типа.",
+        "validation": {
+          "min": "0",
+          "max": "10",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_61",
+        "name": "usb_type_5",
+        "labels": {
+          "ru": "Выберите тип пятого USB‑порта (если он установлен)",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Нет, Type-A | USB 2.0 , Type-A | USB 3.2 Gen 1 , Type-A | USB 3.2 Gen 2 , Type-A | USB 3.2 Gen 2×2 , Type-A | USB4 , Type-C | USB 2.0 | PD | Alt Mode , Type-C | USB 2.0 | PD , Type-C | USB 2.0 | Alt Mode , Type-C | USB 2.0 , Type-C | USB 3.2 Gen 1 | PD | Alt Mode , Type-C | USB 3.2 Gen 1 | PD , Type-C | USB 3.2 Gen 1 | Alt Mode , Type-C | USB 3.2 Gen 1 , Type-C | USB 3.2 Gen 2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2 | PD , Type-C | USB 3.2 Gen 2 | Alt Mode , Type-C | USB 3.2 Gen 2 , Type-C | USB 3.2 Gen 2×2 | PD | Alt Mode , Type-C | USB 3.2 Gen 2×2 | PD , Type-C | USB 3.2 Gen 2×2 | Alt Mode , Type-C | USB 3.2 Gen 2×2 , Type-C | USB4 | PD | Alt Mode | TB3 , Type-C | USB4 | PD | Alt Mode | TB4 , Type-C | USB4 | PD | Alt Mode , Type-C | USB4 | PD , Type-C | USB4 | Alt Mode | TB3 , Type-C | USB4 | Alt Mode | TB4 , Type-C | USB4 | Alt Mode , Type-C | USB4 | TB3 , Type-C | USB4 | TB4 , Type-C | USB4",
+        "required": false,
+        "hint": "Укажите тип пятого USB‑порта.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_62",
+        "name": "usb_type_5_num",
+        "labels": {
+          "ru": "Введите количество портов пятого типа (если есть)",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите количество портов указанного типа.",
+        "validation": {
+          "min": "0",
+          "max": "10",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_51",
+        "name": "rj_num",
+        "labels": {
+          "ru": "Введите количество портов RJ‑45",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число сетевых разъёмов RJ‑45 на устройстве.",
+        "validation": {
+          "min": "0",
+          "max": "4",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_52",
+        "name": "rj_num_gens",
+        "labels": {
+          "ru": "Выберите поддерживаемые стандарты RJ‑45 (если есть)",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "10 Мбит/с (10BASE-T), 100 Мбит/с (100BASE-TX), 1 Гбит/с (1000BASE-T), 2.5 Гбит/с (2.5GBASE-T), 5 Гбит/с (5GBASE-T), 10 Гбит/с (10GBASE-T)",
+        "required": true,
+        "hint": "Отметьте типы сетевых портов, доступные на устройстве.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_50",
+        "name": "videoports_vga_num",
+        "labels": {
+          "ru": "Укажите количество VGA‑портов на устройстве",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Введите количество VGA‑разъёмов (например, 0, 1 или 2)",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_49",
+        "name": "videoports_hdmi",
+        "labels": {
+          "ru": "Выберите версии HDMI, поддерживаемые устройством",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Нет, 1.0, 1.1, 1.2, 1.3, 1.4, 2.0, 2.0a, 2.0b, 2.1, 2.1a, 2.1b, 2.2",
+        "required": true,
+        "hint": "Выберите одну или несколько версий HDMI, доступных на устройстве.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_48",
+        "name": "videoports_hdmi_num",
+        "labels": {
+          "ru": "Введите количество портов HDMI",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число разъёмов HDMI.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_46",
+        "name": "videoports_displayport",
+        "labels": {
+          "ru": "Выберите версии DisplayPort, поддерживаемые устройством",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Нет, 1.0, 1.1, 1.1a, 1.2, 1.2a, 1.3, 1.4, 1.4a, 2.0, 2.1, 2.1a, 2.1b",
+        "required": true,
+        "hint": "Выберите одну или несколько версий DisplayPort, доступных на устройстве.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_47",
+        "name": "videoports_displayport_num",
+        "labels": {
+          "ru": "Введите количество портов DisplayPort",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число разъёмов DisplayPort.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_43",
+        "name": "wattage_in",
+        "labels": {
+          "ru": "Укажите поддерживаемую мощность входного питания",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "20W, 36W, 48W, 65W, 90W, 120W, 150W, 200W ",
+        "required": false,
+        "hint": "Отметьте варианты мощности для зарядки, подходящие устройству.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_44",
+        "name": "wattage_dc",
+        "labels": {
+          "ru": "Выберите разъёмы для зарядки",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Type C, 5.5×2.1 мм, 5.5×2.5 мм, 7.4×5.0 мм, 2,5×0,7 мм, 3,0×1,1 мм, 3,5×1,35 мм",
+        "required": true,
+        "hint": "Отметьте типы разъёмов питания, через которые можно заряжать устройство.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      }
+    ]
+  },
+  {
+    "id": "s_5",
+    "title": "Процессор, память, питание",
+    "fields": [
+      {
+        "id": "f_42",
+        "name": "cpu_socket",
+        "labels": {
+          "ru": "Выберите поддерживаемые процессорные сокеты",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Нет, FS1, G3, BGA-1744, FP8, FP7r2, FP7, FP6, FCBGA1787, FCBGA1449, BGA 1964",
+        "required": true,
+        "hint": "Отметьте стандарты сокетов процессора, совместимые с устройством.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_39",
+        "name": "tdp_laptop",
+        "labels": {
+          "ru": "Введите максимальный TDP платформы",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите максимальное тепловыделение процессора (TDP) в ваттах.",
+        "validation": {
+          "min": "5",
+          "max": "200",
+          "step": "5",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_41",
+        "name": "tdp_fans",
+        "labels": {
+          "ru": "Введите максимальное число вентиляторов",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите, сколько вентиляторов можно установить.",
+        "validation": {
+          "min": "0",
+          "max": "4",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_40",
+        "name": "tdp_laptop_text",
+        "labels": {
+          "ru": "Опишите систему охлаждения: конфигурации и особенности",
+          "en": ""
+        },
+        "type": "text",
+        "options": "",
+        "required": false,
+        "hint": "Введите текстовое описание системы охлаждения устройства.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_34",
+        "name": "ram_gen",
+        "labels": {
+          "ru": "Введите поколение/частоту оперативной памяти в МГц",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите рабочую частоту оперативной памяти (МГц).",
+        "validation": {
+          "min": "2600",
+          "max": "9000",
+          "step": "100",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_35",
+        "name": "ram_bit",
+        "labels": {
+          "ru": "Введите максимальное количество каналов памяти",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число каналов ОЗУ, поддерживаемых устройством.",
+        "validation": {
+          "min": "1",
+          "max": "8",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_36",
+        "name": "ram_sodim",
+        "labels": {
+          "ru": "Введите количество доступных SODIMM‑слотов для памяти",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число слотов SODIMM, которые можно заполнить.",
+        "validation": {
+          "min": "0",
+          "max": "2",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_37",
+        "name": "ram_solder",
+        "labels": {
+          "ru": "Введите количество модулей памяти, которые можно припаять к плате",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите число модулей памяти, напаиваемых на устройство.",
+        "validation": {
+          "min": "0",
+          "max": "4",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_38",
+        "name": "ram_slot",
+        "labels": {
+          "ru": "Возможность замены/установки ОЗУ без разборки корпуса",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если память можно заменить или добавить, не разбирая устройство.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_27",
+        "name": "disk_num",
+        "labels": {
+          "ru": "Введите количество слотов M.2 типа M для подключения SSD",
+          "en": ""
+        },
+        "type": "text",
+        "options": "",
+        "required": true,
+        "hint": "Укажите, сколько слотов M.2 типа M доступно для накопителей.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_32",
+        "name": "disk_gen",
+        "labels": {
+          "ru": "Выберите поддерживаемые поколения PCIe для слотов M.2",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "PCIe 3.0, PCIe 4.0, SATA M.2, PCIe 3.0 - SATA M.2, PCIe 4.0 - SATA M.2",
+        "required": true,
+        "hint": "Выберите версии PCI Express, поддерживаемые слотами M.2.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_28",
+        "name": "disk_slot",
+        "labels": {
+          "ru": "Возможность заменить SSD без разборки корпуса",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если SSD можно заменить, не разбирая устройство.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_25",
+        "name": "battery",
+        "labels": {
+          "ru": "Введите ёмкость аккумулятора (Вт·ч)",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите ёмкость батареи в ватт‑часах.",
+        "validation": {
+          "min": "30",
+          "max": "120",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_26",
+        "name": "battery_slot",
+        "labels": {
+          "ru": "Возможность замены аккумулятора без разборки",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если аккумулятор можно заменить без разборки корпуса.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_29",
+        "name": "battery_smart",
+        "labels": {
+          "ru": "Поддержка зарядки на различном напряжении (Smart Battery)",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если аккумулятор поддерживает различные режимы напряжения.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      }
+    ]
+  },
+  {
+    "id": "s_6",
+    "title": "Безопастность",
+    "fields": [
+      {
+        "id": "f_19",
+        "name": "sim_module",
+        "labels": {
+          "ru": "Наличие модуля мобильной связи (SIM)",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если в устройстве есть модуль связи 4G/5G.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_20",
+        "name": "tpm",
+        "labels": {
+          "ru": "Выберите тип встроенного TPM",
+          "en": ""
+        },
+        "type": "radio",
+        "options": "fTPM, PTT, другое, нет",
+        "required": true,
+        "hint": "Укажите тип встроенного TPM (например, fTPM, PTT, другое или нет).",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_22",
+        "name": "tpm_disc",
+        "labels": {
+          "ru": "Наличие дискретного TPM‑модуля",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если в устройстве предусмотрен отдельный TPM‑модуль.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_21",
+        "name": "wifibt_module",
+        "labels": {
+          "ru": "Укажите модель Wi‑Fi/Bluetooth‑модуля",
+          "en": ""
+        },
+        "type": "text",
+        "options": "",
+        "required": true,
+        "hint": "Введите название установленного модуля беспроводной связи.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_24",
+        "name": "wifibt_module_sold",
+        "labels": {
+          "ru": "Способ установки Wi‑Fi‑модуля",
+          "en": ""
+        },
+        "type": "radio",
+        "options": "Напаян, Вставлен, Нет",
+        "required": true,
+        "hint": "Выберите способ установки: напаян, вставлен, либо отсутствует.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_23",
+        "name": "wifibt_module_mimo",
+        "labels": {
+          "ru": "Количество антенн в модуле связи (MIMO)",
+          "en": ""
+        },
+        "type": "radio",
+        "options": "Нет, 1x1, 2x2, 3x3, 4x4",
+        "required": false,
+        "hint": "Укажите количество антенн (MIMO) для беспроводной связи.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      }
+    ]
+  },
+  {
+    "id": "s_7",
+    "title": "Ввод",
+    "fields": [
+      {
+        "id": "f_11",
+        "name": "keyboard_layout",
+        "labels": {
+          "ru": "Выберите раскладку клавиатуры",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Британская, Американская",
+        "required": false,
+        "hint": "Укажите национальный стандарт клавиатуры (например, американская, британская).",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_13",
+        "name": "keyboard_layout_numpad",
+        "labels": {
+          "ru": "Наличие цифрового блока (NumPad)",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "Британская, Американская",
+        "required": true,
+        "hint": "Отметьте, если клавиатура оснащена отдельным цифровым блоком.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_14",
+        "name": "keyboard_layout_fingerprint",
+        "labels": {
+          "ru": "Наличие датчика отпечатков пальцев",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "Британская, Американская",
+        "required": true,
+        "hint": "Отметьте, если ноутбук оснащён сканером отпечатков.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_16",
+        "name": "touchpad_gest",
+        "labels": {
+          "ru": "Поддержка жестов тачпада",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если тачпад поддерживает мультитач‑жесты.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_17",
+        "name": "touchpad_buttons",
+        "labels": {
+          "ru": "Наличие физических кнопок на тачпаде",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если у тачпада есть отдельные кнопки.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_15",
+        "name": "touchpad_force",
+        "labels": {
+          "ru": "Функция имитации нажатия на трекпад",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если тачпад поддерживает технологию Force Touch/Press.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_18",
+        "name": "touchpad_uefi",
+        "labels": {
+          "ru": "Возможность использования тачпада в UEFI",
+          "en": ""
+        },
+        "type": "text",
+        "options": "",
+        "required": false,
+        "hint": "Опишите, можно ли использовать тачпад в BIOS/UEFI.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      }
+    ]
+  },
+  {
+    "id": "s_8",
+    "title": "Камера и приватность",
+    "fields": [
+      {
+        "id": "f_1",
+        "name": "Camera_mp",
+        "labels": {
+          "ru": "Введите разрешение веб‑камеры",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": true,
+        "hint": "Укажите разрешение встроенной камеры в мегапикселях.",
+        "validation": {
+          "min": "0.3",
+          "max": "8",
+          "step": "0.1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_2",
+        "name": "Camera_shutter",
+        "labels": {
+          "ru": "Наличие шторки камеры",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если камера оснащена механической шторкой.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_3",
+        "name": "Kensington_lock",
+        "labels": {
+          "ru": "Наличие замка Kensington",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": false,
+        "hint": "Отметьте, если устройство имеет слот для замка Kensington.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_9",
+        "name": "cardreader",
+        "labels": {
+          "ru": "Тип встроенного кардридера",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Нет, SD, MicroSD",
+        "required": true,
+        "hint": "Выберите тип поддерживаемого картридера (SD, microSD или нет).",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_4",
+        "name": "audio_mic",
+        "labels": {
+          "ru": "Введите количество микрофонов",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите, сколько микрофонов встроено.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_6",
+        "name": "audio__jack",
+        "labels": {
+          "ru": "Наличие аудиоразъёма",
+          "en": ""
+        },
+        "type": "checkbox",
+        "options": "",
+        "required": true,
+        "hint": "Отметьте, если устройство оснащено аудиоразъёмом 3,5 мм.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": false
+      },
+      {
+        "id": "f_5",
+        "name": "audio__drivers",
+        "labels": {
+          "ru": "Введите количество динамиков",
+          "en": ""
+        },
+        "type": "number",
+        "options": "",
+        "required": false,
+        "hint": "Укажите число встроенных динамиков.",
+        "validation": {
+          "min": "1",
+          "max": "8",
+          "step": "1",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_8",
+        "name": "audio__navigation",
+        "labels": {
+          "ru": "Направление звука от динамиков",
+          "en": ""
+        },
+        "type": "select",
+        "options": "Направленные вниз, Направленные вверх, Направленные вбок",
+        "required": false,
+        "hint": "Выберите, куда направлены динамики (вниз, вверх, вбок).",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_7",
+        "name": "audio__power",
+        "labels": {
+          "ru": "Укажите мощность динамиков",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Нет, 1W, 2W, 2.5W, 3W, 5W",
+        "required": false,
+        "hint": "Выберите номинальную мощность динамиков в ваттах.",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      },
+      {
+        "id": "f_10",
+        "name": "audio__sert",
+        "labels": {
+          "ru": "Поддерживаемые аудиотехнологии",
+          "en": ""
+        },
+        "type": "multiselect",
+        "options": "Нет, Dolby Audio, DTS, Nahimic, Realtek, другое",
+        "required": false,
+        "hint": "Выберите звуковые технологии, поддерживаемые устройством (Dolby, DTS и т. д.).",
+        "validation": {
+          "min": "",
+          "max": "",
+          "step": "",
+          "pattern": "",
+          "format": ""
+        },
+        "showAdvanced": true
+      }
+    ]
+  }
+]
